@@ -309,6 +309,7 @@ function App() {
                       senderName: myName 
                   });
               }
+              e.target.value = ''; // Reset per iOS Safari: senza questo, la seconda selezione non attiva onChange
           }} />
 
           {/* CONTENUTO CENTRALE (Radar o Card) */}
